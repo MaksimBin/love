@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ОЛЯ + МАКСИМ = ЛЮБОВЬ!!!!!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="color" class="container">
+    <div class='blockAnime'>
+      <p id="random"></p>
+    </div>
+    <div id="styleBlock" class="img">
+      <div class="loder"></div>
+      <div id="time" class="timeStyle">
+      </div>
+    </div>
+    <div class="block">
+      <div onclick="modal()" class="modal">
+        <div class="modal-bg"></div>
+        <div class="modal-bg"></div>
+        <div class="modal-bg"></div>
+      </div>
+        <div class="inputFiles">
+      <label for="files" class="btn">
+        <i class="fa fa-download fa-3x" aria-hidden="true"></i>
+      </label>
+      <input id="files" style="visibility:hidden;" type="file" onchange="showFile(this)" multiple>
+    </div>
+      <button id="color1" class="container_element butt transform-love1" type="button" onclick="naz()">&#10084;</button>
+      <button id="color2" class="container_element_center butt-center" type="button" onclick="playAudio()">&#10084;</button>
+      <button id="color3" class="container_element butt transform-love2" type="button" onclick="next()">&#10084;</button>
+    </div>
+    <button id="stop" class="stop" type="button" onclick="stop()">&#128150;stop&#128150;</button>
+      <canvas id="canvas">
+        <div id="2d"></div>
+      </canvas>
+  </div>
+  <div class="modalDi" id="modalDialog">
+    <div id="button"></div>
+    <div class="div" id="div"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
